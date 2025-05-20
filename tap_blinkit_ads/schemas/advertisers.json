@@ -1,0 +1,92 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": ["integer", "null"]
+        },
+        "name": {
+            "type": ["string", "null"]
+        },
+        "logo": {
+            "type": ["null", "string"]
+        },
+        "enabled_keyword_ids": {
+            "type": ["array", "null"],
+            "items": {}
+        },
+        "compliance_status": {
+            "type": ["string", "null"]
+        },
+        "ad_credit_details": {
+            "type": ["object", "null"],
+            "properties": {
+                "active": {
+                    "type": ["boolean", "null"]
+                },
+                "balance": {
+                    "type": ["number", "null"]
+                }
+            }
+        },
+        "wallet_details": {
+            "type": ["object", "null"],
+            "properties": {
+                "active": {
+                    "type": ["boolean", "null"]
+                },
+                "balance": {
+                    "type": ["number", "null"]
+                },
+                "tentative_spend": {
+                    "type": ["integer", "null"]
+                }
+            }
+        },
+        "features": {
+            "type": ["object", "null"],
+            "properties": {
+                "city_filter": {
+                    "type": ["string", "null"]
+                },
+                "day_of_week_targeting": {
+                    "type": ["string", "null"]
+                },
+                "search_bid_booster": {
+                    "type": ["string", "null"]
+                },
+                "category_bid_booster": {
+                    "type": ["string", "null"]
+                },
+                "wallet": {
+                    "type": ["string", "null"]
+                },
+                "change_scheduler": {
+                    "type": ["string", "null"]
+                },
+                "brand_store": {
+                    "type": ["string", "null"]
+                },
+                "brands_central_v2": {
+                    "type": ["string", "null"]
+                },
+                "similar_products_recommendation": {
+                    "type": ["string", "null"]
+                },
+                "order_again_v2": {
+                    "type": ["string", "null"]
+                }
+            }
+        },
+        "tnc_data": {
+            "type": ["object", "null"],
+            "properties": {
+                "tnc_accepted": {
+                    "type": ["boolean", "null"]
+                },
+                "days_left": {
+                    "type": ["integer", "null"]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "type": ["null", "object"],
+    "properties": {
+        "keyword": {
+            "type": ["null", "string"]
+        },
+        "monthly_searches": {
+            "type": ["null", "integer"]
+        },
+        "sov": {
+            "type": ["null", "number"]
+        }
+    }
+}

@@ -1,0 +1,2837 @@
+{
+    "streams": [
+        {
+            "tap_stream_id": "campaigns",
+            "stream": "campaigns",
+            "key_properties": [
+                "id"
+            ],
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "campaign_name": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "campaign_type": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "campaign_status": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "start_ts": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "end_ts": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "infinite_campaign": {
+                        "type": [
+                            "boolean",
+                            "null"
+                        ]
+                    },
+                    "budget_consumed": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "impressions": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "atcs": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "roas": {
+                        "type": [
+                            "number",
+                            "null"
+                        ]
+                    },
+                    "reach": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "alerts": {
+                        "type": [
+                            "null",
+                            "object"
+                        ]
+                    },
+                    "updated_ts": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "no_of_changes_scheduled": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    }
+                }
+            },
+            "metadata": [
+                {
+                    "breadcrumb": [],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "id"
+                    ],
+                    "metadata": {
+                        "inclusion": "automatic"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "campaign_name"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "campaign_type"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "campaign_status"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "start_ts"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "end_ts"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "infinite_campaign"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "budget_consumed"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "impressions"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "atcs"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "roas"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "reach"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "alerts"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "updated_ts"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "no_of_changes_scheduled"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                }
+            ]
+        },
+        {
+            "tap_stream_id": "campaign_details",
+            "stream": "campaign_details",
+            "key_properties": [
+                "campaign_id"
+            ],
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "name": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "status": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "start_ts": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "date-time"
+                    },
+                    "end_ts": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "date-time"
+                    },
+                    "infinite_campaign": {
+                        "type": [
+                            "boolean",
+                            "null"
+                        ]
+                    },
+                    "campaign_type": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "mobile_image_url": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "web_image_url": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "header_title": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "creative_type": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "objective_type": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "campaign_type_icon": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "campaign_budget": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "impressions_served": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "impressions_bought": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "alerts": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {}
+                    },
+                    "products": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ]
+                                },
+                                "is_star_product": {
+                                    "type": [
+                                        "boolean",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "pids": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "type": "integer"
+                        }
+                    },
+                    "brand_ids": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "type": "integer"
+                        }
+                    },
+                    "highlighted_pids": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "type": "integer"
+                        }
+                    },
+                    "region_type": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "region_ids": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {}
+                    },
+                    "cpm": {
+                        "type": [
+                            "number",
+                            "null"
+                        ]
+                    },
+                    "equally_divide_budget": {
+                        "type": [
+                            "boolean",
+                            "null"
+                        ]
+                    },
+                    "run_till_budget_ends": {
+                        "type": [
+                            "boolean",
+                            "null"
+                        ]
+                    },
+                    "etl_billed_amount": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "pacing_type": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "requested_by": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "campaign_status_color": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "collection_id": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "brand_id": {
+                        "type": [
+                            "null",
+                            "integer"
+                        ]
+                    },
+                    "store_name": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "etl_impressions": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "etl_snapshot_ts": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "ad_title": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "ad_subtitle": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "billed_amount": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "campaign_atc": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "brand_atc": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "campaign_sales": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "brand_sales": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "negative_keywords": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "keywords": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "keyword": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "bids": {
+                                    "type": [
+                                        "array",
+                                        "null"
+                                    ],
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "match_type": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            },
+                                            "cpm": {
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ]
+                                            },
+                                            "max_boost": {
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "categories": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {}
+                    },
+                    "allowed_transitions": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "brand_page_id": {
+                        "type": [
+                            "null",
+                            "integer"
+                        ]
+                    },
+                    "collection_filters": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "sort": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "display_name": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "brands_ids": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "category_ids": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                }
+            },
+            "metadata": [
+                {
+                    "breadcrumb": [],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "id"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "name"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "status"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "start_ts"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "end_ts"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "infinite_campaign"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "campaign_type"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "mobile_image_url"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "web_image_url"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "header_title"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "creative_type"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "objective_type"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "campaign_type_icon"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "campaign_budget"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "impressions_served"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "impressions_bought"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "alerts"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "products"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "pids"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "brand_ids"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "highlighted_pids"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "region_type"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "region_ids"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "cpm"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "equally_divide_budget"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "run_till_budget_ends"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "etl_billed_amount"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "pacing_type"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "requested_by"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "campaign_status_color"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "collection_id"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "brand_id"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "store_name"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "etl_impressions"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "etl_snapshot_ts"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "ad_title"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "ad_subtitle"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "billed_amount"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "campaign_atc"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "brand_atc"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "campaign_sales"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "brand_sales"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "negative_keywords"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "keywords"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "categories"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "allowed_transitions"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "brand_page_id"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "collection_filters"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "sort"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "display_name"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "brands_ids"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "category_ids"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                }
+            ]
+        },
+        {
+            "tap_stream_id": "advertisers",
+            "stream": "advertisers",
+            "key_properties": [
+                "id"
+            ],
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "name": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "logo": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "enabled_keyword_ids": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {}
+                    },
+                    "compliance_status": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "ad_credit_details": {
+                        "type": [
+                            "object",
+                            "null"
+                        ],
+                        "properties": {
+                            "active": {
+                                "type": [
+                                    "boolean",
+                                    "null"
+                                ]
+                            },
+                            "balance": {
+                                "type": [
+                                    "number",
+                                    "null"
+                                ]
+                            }
+                        }
+                    },
+                    "wallet_details": {
+                        "type": [
+                            "object",
+                            "null"
+                        ],
+                        "properties": {
+                            "active": {
+                                "type": [
+                                    "boolean",
+                                    "null"
+                                ]
+                            },
+                            "balance": {
+                                "type": [
+                                    "number",
+                                    "null"
+                                ]
+                            },
+                            "tentative_spend": {
+                                "type": [
+                                    "integer",
+                                    "null"
+                                ]
+                            }
+                        }
+                    },
+                    "features": {
+                        "type": [
+                            "object",
+                            "null"
+                        ],
+                        "properties": {
+                            "city_filter": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "day_of_week_targeting": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "search_bid_booster": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "category_bid_booster": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "wallet": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "change_scheduler": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "brand_store": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "brands_central_v2": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "similar_products_recommendation": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "order_again_v2": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        }
+                    },
+                    "tnc_data": {
+                        "type": [
+                            "object",
+                            "null"
+                        ],
+                        "properties": {
+                            "tnc_accepted": {
+                                "type": [
+                                    "boolean",
+                                    "null"
+                                ]
+                            },
+                            "days_left": {
+                                "type": [
+                                    "integer",
+                                    "null"
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "metadata": [
+                {
+                    "breadcrumb": [],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "id"
+                    ],
+                    "metadata": {
+                        "inclusion": "automatic"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "name"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "logo"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "enabled_keyword_ids"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "compliance_status"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "ad_credit_details"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "wallet_details"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "features"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "tnc_data"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                }
+            ]
+        },
+        {
+            "tap_stream_id": "products",
+            "stream": "products",
+            "key_properties": [
+                "id"
+            ],
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "name": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "concat_name": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "override_name": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "unit": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "brand": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "related_brand": {
+                        "type": [
+                            "object",
+                            "null"
+                        ],
+                        "properties": {
+                            "id": {
+                                "type": [
+                                    "integer",
+                                    "null"
+                                ]
+                            },
+                            "name": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "display_name": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        }
+                    },
+                    "related_display_brand": {
+                        "type": [
+                            "null",
+                            "object"
+                        ]
+                    },
+                    "type": {
+                        "type": [
+                            "object",
+                            "null"
+                        ],
+                        "properties": {
+                            "id": {
+                                "type": [
+                                    "integer",
+                                    "null"
+                                ]
+                            },
+                            "name": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            }
+                        }
+                    },
+                    "display_type": {
+                        "type": [
+                            "null",
+                            "object"
+                        ]
+                    },
+                    "variant": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "inventory_limit": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "price": {
+                        "type": [
+                            "number",
+                            "null"
+                        ]
+                    },
+                    "image_url": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "large_image_url": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "sliding_images": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ]
+                                },
+                                "image_path": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "png_image_path": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "sort_order": {
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ]
+                                },
+                                "asset_type": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "video_auto_play": {
+                                    "type": [
+                                        "boolean",
+                                        "null"
+                                    ]
+                                },
+                                "video_path": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "priority": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "is_png_transparent": {
+                                    "type": [
+                                        "boolean",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "metadata": [
+                {
+                    "breadcrumb": [],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "id"
+                    ],
+                    "metadata": {
+                        "inclusion": "automatic"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "name"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "concat_name"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "override_name"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "unit"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "brand"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "related_brand"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "related_display_brand"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "type"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "display_type"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "variant"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "inventory_limit"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "price"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "image_url"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "large_image_url"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "sliding_images"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                }
+            ]
+        },
+        {
+            "tap_stream_id": "sponsored_sov",
+            "stream": "sponsored_sov",
+            "key_properties": [
+                "keyword"
+            ],
+            "schema": {
+                "type": [
+                    "null",
+                    "object"
+                ],
+                "properties": {
+                    "keyword": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "monthly_searches": {
+                        "type": [
+                            "null",
+                            "integer"
+                        ]
+                    },
+                    "sov": {
+                        "type": [
+                            "null",
+                            "number"
+                        ]
+                    }
+                }
+            },
+            "metadata": [
+                {
+                    "breadcrumb": [],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "keyword"
+                    ],
+                    "metadata": {
+                        "inclusion": "automatic"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "monthly_searches"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "sov"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                }
+            ]
+        },
+        {
+            "tap_stream_id": "campaign_keyword_performance",
+            "stream": "campaign_keyword_performance",
+            "key_properties": [
+                "keyword"
+            ],
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "keyword": {
+                        "type": "string",
+                        "description": "The keyword."
+                    },
+                    "bid_range": {
+                        "type": "object",
+                        "properties": {
+                            "exact_match": {
+                                "type": "object",
+                                "properties": {
+                                    "min": {
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ],
+                                        "description": "The minimum bid for exact match."
+                                    },
+                                    "max": {
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ],
+                                        "description": "The maximum bid for exact match."
+                                    },
+                                    "suggested_min": {
+                                        "type": [
+                                            "null",
+                                            "integer"
+                                        ],
+                                        "description": "The suggested minimum bid for exact match."
+                                    },
+                                    "suggested_max": {
+                                        "type": [
+                                            "null",
+                                            "integer"
+                                        ],
+                                        "description": "The suggested maximum bid for exact match."
+                                    },
+                                    "min_for_boost": {
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ],
+                                        "description": "The minimum bid for boost for exact match."
+                                    }
+                                }
+                            },
+                            "smart_match": {
+                                "type": "object",
+                                "properties": {
+                                    "min": {
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ],
+                                        "description": "The minimum bid for smart match."
+                                    },
+                                    "max": {
+                                        "type": [
+                                            "integer",
+                                            "null"
+                                        ],
+                                        "description": "The maximum bid for smart match."
+                                    },
+                                    "suggested_min": {
+                                        "type": [
+                                            "null",
+                                            "integer"
+                                        ],
+                                        "description": "The suggested minimum bid for smart match."
+                                    },
+                                    "suggested_max": {
+                                        "type": [
+                                            "null",
+                                            "integer"
+                                        ],
+                                        "description": "The suggested maximum bid for smart match."
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "keyword_searches": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ],
+                        "description": "The number of keyword searches."
+                    },
+                    "nkr_keywords": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {},
+                        "description": "Array of nkr keywords"
+                    }
+                }
+            },
+            "metadata": [
+                {
+                    "breadcrumb": [],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "keyword"
+                    ],
+                    "metadata": {
+                        "inclusion": "automatic"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "bid_range"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "keyword_searches"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "nkr_keywords"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                }
+            ]
+        },
+        {
+            "tap_stream_id": "campaign_performance",
+            "stream": "campaign_performance",
+            "key_properties": [
+                "campaign_id"
+            ],
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "name": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "status": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "start_ts": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "date-time"
+                    },
+                    "end_ts": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "format": "date-time"
+                    },
+                    "infinite_campaign": {
+                        "type": [
+                            "boolean",
+                            "null"
+                        ]
+                    },
+                    "campaign_type": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "mobile_image_url": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "web_image_url": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "header_title": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "creative_type": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "objective_type": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "campaign_type_icon": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "campaign_budget": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "impressions_served": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "impressions_bought": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "alerts": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {}
+                    },
+                    "products": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": [
+                                        "integer",
+                                        "null"
+                                    ]
+                                },
+                                "is_star_product": {
+                                    "type": [
+                                        "boolean",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "pids": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "type": "integer"
+                        }
+                    },
+                    "brand_ids": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "type": "integer"
+                        }
+                    },
+                    "highlighted_pids": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "type": "integer"
+                        }
+                    },
+                    "region_type": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "region_ids": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {}
+                    },
+                    "cpm": {
+                        "type": [
+                            "number",
+                            "null"
+                        ]
+                    },
+                    "equally_divide_budget": {
+                        "type": [
+                            "boolean",
+                            "null"
+                        ]
+                    },
+                    "run_till_budget_ends": {
+                        "type": [
+                            "boolean",
+                            "null"
+                        ]
+                    },
+                    "etl_billed_amount": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "pacing_type": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "requested_by": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "campaign_status_color": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "collection_id": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "brand_id": {
+                        "type": [
+                            "null",
+                            "integer"
+                        ]
+                    },
+                    "store_name": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "etl_impressions": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "etl_snapshot_ts": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "ad_title": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "ad_subtitle": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "billed_amount": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "campaign_atc": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "brand_atc": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "campaign_sales": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "brand_sales": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ]
+                    },
+                    "negative_keywords": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "keywords": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "keyword": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "bids": {
+                                    "type": [
+                                        "array",
+                                        "null"
+                                    ],
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "match_type": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            },
+                                            "cpm": {
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ]
+                                            },
+                                            "max_boost": {
+                                                "type": [
+                                                    "integer",
+                                                    "null"
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "categories": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {}
+                    },
+                    "allowed_transitions": {
+                        "type": [
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "brand_page_id": {
+                        "type": [
+                            "null",
+                            "integer"
+                        ]
+                    },
+                    "collection_filters": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "sort": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "display_name": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "brands_ids": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    "category_ids": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                }
+            },
+            "metadata": [
+                {
+                    "breadcrumb": [],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "id"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "name"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "status"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "start_ts"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "end_ts"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "infinite_campaign"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "campaign_type"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "mobile_image_url"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "web_image_url"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "header_title"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "creative_type"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "objective_type"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "campaign_type_icon"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "campaign_budget"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "impressions_served"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "impressions_bought"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "alerts"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "products"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "pids"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "brand_ids"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "highlighted_pids"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "region_type"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "region_ids"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "cpm"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "equally_divide_budget"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "run_till_budget_ends"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "etl_billed_amount"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "pacing_type"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "requested_by"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "campaign_status_color"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "collection_id"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "brand_id"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "store_name"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "etl_impressions"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "etl_snapshot_ts"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "ad_title"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "ad_subtitle"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "billed_amount"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "campaign_atc"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "brand_atc"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "campaign_sales"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "brand_sales"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "negative_keywords"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "keywords"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "categories"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "allowed_transitions"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "brand_page_id"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "collection_filters"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "sort"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "display_name"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "brands_ids"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": [
+                        "properties",
+                        "category_ids"
+                    ],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                }
+            ]
+        }
+    ]
+}

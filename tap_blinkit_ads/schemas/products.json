@@ -1,0 +1,104 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": ["integer", "null"]
+        },
+        "name": {
+            "type": ["string", "null"]
+        },
+        "concat_name": {
+            "type": ["string", "null"]
+        },
+        "override_name": {
+            "type": ["string", "null"]
+        },
+        "unit": {
+            "type": ["string", "null"]
+        },
+        "brand": {
+            "type": ["string", "null"]
+        },
+        "related_brand": {
+            "type": ["object", "null"],
+            "properties": {
+                "id": {
+                    "type": ["integer", "null"]
+                },
+                "name": {
+                    "type": ["string", "null"]
+                },
+                "display_name": {
+                    "type": ["string", "null"]
+                }
+            }
+        },
+        "related_display_brand": {
+            "type": ["null", "object"]
+        },
+        "type": {
+            "type": ["object", "null"],
+            "properties": {
+                "id": {
+                    "type": ["integer", "null"]
+                },
+                "name": {
+                    "type": ["string", "null"]
+                }
+            }
+        },
+        "display_type": {
+            "type": ["null", "object"]
+        },
+        "variant": {
+            "type": ["string", "null"]
+        },
+        "inventory_limit": {
+            "type": ["integer", "null"]
+        },
+        "price": {
+            "type": ["number", "null"]
+        },
+        "image_url": {
+            "type": ["string", "null"]
+        },
+        "large_image_url": {
+            "type": ["string", "null"]
+        },
+        "sliding_images": {
+            "type": ["array", "null"],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": ["integer", "null"]
+                    },
+                    "image_path": {
+                        "type": ["string", "null"]
+                    },
+                    "png_image_path": {
+                        "type": ["string", "null"]
+                    },
+                    "sort_order": {
+                        "type": ["integer", "null"]
+                    },
+                    "asset_type": {
+                        "type": ["string", "null"]
+                    },
+                    "video_auto_play": {
+                        "type": ["boolean", "null"]
+                    },
+                    "video_path": {
+                        "type": ["string", "null"]
+                    },
+                    "priority": {
+                        "type": ["string", "null"]
+                    },
+                    "is_png_transparent": {
+                        "type": ["boolean", "null"]
+                    }
+                }
+            }
+        }
+    }
+}

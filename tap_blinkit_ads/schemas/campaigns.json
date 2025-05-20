@@ -1,0 +1,50 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": ["integer", "null"]
+        },
+        "campaign_name": {
+            "type": ["string", "null"]
+        },
+        "campaign_type": {
+            "type": ["string", "null"]
+        },
+        "campaign_status": {
+            "type": ["string", "null"]
+        },
+        "start_ts": {
+            "type": ["string", "null"]
+        },
+        "end_ts": {
+            "type": ["string", "null"]
+        },
+        "infinite_campaign": {
+            "type": ["boolean", "null"]
+        },
+        "budget_consumed": {
+            "type": ["integer", "null"]
+        },
+        "impressions": {
+            "type": ["integer", "null"]
+        },
+        "atcs": {
+            "type": ["integer", "null"]
+        },
+        "roas": {
+            "type": ["number", "null"]
+        },
+        "reach": {
+            "type": ["integer", "null"]
+        },
+        "alerts": {
+            "type": ["null", "object"]
+        },
+        "updated_ts": {
+            "type": ["string", "null"]
+        },
+        "no_of_changes_scheduled": {
+            "type": ["integer", "null"]
+        }
+    }
+}

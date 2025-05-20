@@ -1,0 +1,102 @@
+{
+    "type": "object",
+    "properties": {
+        "keyword": {
+            "type": "string",
+            "description": "The keyword."
+        },
+        "bid_range": {
+            "type": "object",
+            "properties": {
+                "exact_match": {
+                    "type": "object",
+                    "properties": {
+                        "min": {
+                            "type": [
+                                "integer",
+                                "null"
+                            ],
+                            "description": "The minimum bid for exact match."
+                        },
+                        "max": {
+                            "type": [
+                                "integer",
+                                "null"
+                            ],
+                            "description": "The maximum bid for exact match."
+                        },
+                        "suggested_min": {
+                            "type": [
+                                "null",
+                                "integer"
+                            ],
+                            "description": "The suggested minimum bid for exact match."
+                        },
+                        "suggested_max": {
+                            "type": [
+                                "null",
+                                "integer"
+                            ],
+                            "description": "The suggested maximum bid for exact match."
+                        },
+                        "min_for_boost": {
+                            "type": [
+                                "integer",
+                                "null"
+                            ],
+                            "description": "The minimum bid for boost for exact match."
+                        }
+                    }
+                },
+                "smart_match": {
+                    "type": "object",
+                    "properties": {
+                        "min": {
+                            "type": [
+                                "integer",
+                                "null"
+                            ],
+                            "description": "The minimum bid for smart match."
+                        },
+                        "max": {
+                            "type": [
+                                "integer",
+                                "null"
+                            ],
+                            "description": "The maximum bid for smart match."
+                        },
+                        "suggested_min": {
+                            "type": [
+                                "null",
+                                "integer"
+                            ],
+                            "description": "The suggested minimum bid for smart match."
+                        },
+                        "suggested_max": {
+                            "type": [
+                                "null",
+                                "integer"
+                            ],
+                            "description": "The suggested maximum bid for smart match."
+                        }
+                    }
+                }
+            }
+        },
+        "keyword_searches": {
+            "type": [
+                "integer",
+                "null"
+            ],
+            "description": "The number of keyword searches."
+        },
+        "nkr_keywords": {
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {},
+            "description": "Array of nkr keywords"
+        }
+    }
+}
