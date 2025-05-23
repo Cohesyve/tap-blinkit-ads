@@ -37,7 +37,7 @@ class BaseStream(base):
         api_base_url = DEFAULT_BASE_URL
         return '{}{}'.format(api_base_url, path)
 
-    def transform_record(self, record, inject_profile=False):
+    def transform_record(self, record):
         transformed = base.transform_record(self, record)
 
         return transformed
