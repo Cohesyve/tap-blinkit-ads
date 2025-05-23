@@ -2071,397 +2071,132 @@
       ]
     },
     {
-      "tap_stream_id": "campaign_performance",
-      "stream": "campaign_performance",
+      "tap_stream_id": "campaign_performance_product_listing",
+      "stream": "campaign_performance_product_listing",
       "key_properties": [
-        "campaign_id"
+        "Campaign ID"
       ],
       "schema": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": [
-              "integer",
-              "null"
-            ]
-          },
-          "name": {
+          "Campaign ID": {
             "type": [
               "string",
               "null"
             ]
           },
-          "status": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "start_ts": {
+          "Date": {
             "type": [
               "string",
               "null"
             ],
-            "format": "date-time"
+            "format": "date"
           },
-          "end_ts": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "format": "date-time"
-          },
-          "infinite_campaign": {
-            "type": [
-              "boolean",
-              "null"
-            ]
-          },
-          "campaign_type": {
+          "Campaign Name": {
             "type": [
               "string",
               "null"
             ]
           },
-          "mobile_image_url": {
+          "Targeting Type": {
             "type": [
               "string",
               "null"
             ]
           },
-          "web_image_url": {
+          "Targeting Value": {
             "type": [
               "string",
               "null"
             ]
           },
-          "header_title": {
+          "Match Type": {
             "type": [
               "string",
               "null"
             ]
           },
-          "creative_type": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "objective_type": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "campaign_type_icon": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "campaign_budget": {
-            "type": [
-              "integer",
-              "null"
-            ]
-          },
-          "impressions_served": {
-            "type": [
-              "integer",
-              "null"
-            ]
-          },
-          "impressions_bought": {
-            "type": [
-              "integer",
-              "null"
-            ]
-          },
-          "alerts": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {}
-          },
-          "products": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {
-              "type": "object",
-              "properties": {
-                "id": {
-                  "type": [
-                    "integer",
-                    "null"
-                  ]
-                },
-                "is_star_product": {
-                  "type": [
-                    "boolean",
-                    "null"
-                  ]
-                }
-              }
-            }
-          },
-          "pids": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {
-              "type": "integer"
-            }
-          },
-          "brand_ids": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {
-              "type": "integer"
-            }
-          },
-          "highlighted_pids": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {
-              "type": "integer"
-            }
-          },
-          "region_type": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "region_ids": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {}
-          },
-          "cpm": {
+          "Most Viewed Position": {
             "type": [
               "number",
               "null"
             ]
           },
-          "equally_divide_budget": {
-            "type": [
-              "boolean",
-              "null"
-            ]
-          },
-          "run_till_budget_ends": {
-            "type": [
-              "boolean",
-              "null"
-            ]
-          },
-          "etl_billed_amount": {
-            "type": [
-              "integer",
-              "null"
-            ]
-          },
-          "pacing_type": {
+          "Pacing Type": {
             "type": [
               "string",
               "null"
             ]
           },
-          "requested_by": {
+          "CPM": {
             "type": [
-              "string",
+              "number",
               "null"
             ]
           },
-          "campaign_status_color": {
+          "Impressions": {
             "type": [
-              "string",
+              "number",
               "null"
             ]
           },
-          "collection_id": {
+          "Direct ATC": {
             "type": [
-              "string",
+              "number",
               "null"
             ]
           },
-          "brand_id": {
+          "Indirect ATC": {
             "type": [
-              "null",
-              "integer"
-            ]
-          },
-          "store_name": {
-            "type": [
-              "string",
+              "number",
               "null"
             ]
           },
-          "etl_impressions": {
+          "Direct Quantities Sold": {
             "type": [
-              "integer",
+              "number",
               "null"
             ]
           },
-          "etl_snapshot_ts": {
+          "Indirect Quantities Sold": {
             "type": [
-              "string",
+              "number",
               "null"
             ]
           },
-          "ad_title": {
+          "Direct Sales": {
             "type": [
-              "string",
+              "number",
               "null"
             ]
           },
-          "ad_subtitle": {
+          "Indirect Sales": {
             "type": [
-              "string",
+              "number",
               "null"
             ]
           },
-          "billed_amount": {
+          "New Users Acquired": {
             "type": [
-              "integer",
+              "number",
               "null"
             ]
           },
-          "campaign_atc": {
+          "Estimated Budget Consumed": {
             "type": [
-              "integer",
+              "number",
               "null"
             ]
           },
-          "brand_atc": {
+          "Direct RoAS": {
             "type": [
-              "integer",
+              "number",
               "null"
             ]
           },
-          "campaign_sales": {
+          "Total RoAS": {
             "type": [
-              "integer",
-              "null"
-            ]
-          },
-          "brand_sales": {
-            "type": [
-              "integer",
-              "null"
-            ]
-          },
-          "negative_keywords": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "keywords": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {
-              "type": "object",
-              "properties": {
-                "keyword": {
-                  "type": [
-                    "string",
-                    "null"
-                  ]
-                },
-                "bids": {
-                  "type": [
-                    "array",
-                    "null"
-                  ],
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "match_type": {
-                        "type": [
-                          "string",
-                          "null"
-                        ]
-                      },
-                      "cpm": {
-                        "type": [
-                          "integer",
-                          "null"
-                        ]
-                      },
-                      "max_boost": {
-                        "type": [
-                          "integer",
-                          "null"
-                        ]
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "categories": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {}
-          },
-          "allowed_transitions": {
-            "type": [
-              "array",
-              "null"
-            ],
-            "items": {
-              "type": "string"
-            }
-          },
-          "brand_page_id": {
-            "type": [
-              "null",
-              "integer"
-            ]
-          },
-          "collection_filters": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "sort": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "display_name": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "brands_ids": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
-          "category_ids": {
-            "type": [
-              "string",
+              "number",
               "null"
             ]
           }
@@ -2479,7 +2214,17 @@
         {
           "breadcrumb": [
             "properties",
-            "id"
+            "Campaign ID"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Date"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2489,7 +2234,7 @@
         {
           "breadcrumb": [
             "properties",
-            "name"
+            "Campaign Name"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2499,7 +2244,7 @@
         {
           "breadcrumb": [
             "properties",
-            "status"
+            "Targeting Type"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2509,7 +2254,7 @@
         {
           "breadcrumb": [
             "properties",
-            "start_ts"
+            "Targeting Value"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2519,7 +2264,7 @@
         {
           "breadcrumb": [
             "properties",
-            "end_ts"
+            "Match Type"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2529,7 +2274,7 @@
         {
           "breadcrumb": [
             "properties",
-            "infinite_campaign"
+            "Most Viewed Position"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2539,7 +2284,7 @@
         {
           "breadcrumb": [
             "properties",
-            "campaign_type"
+            "Pacing Type"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2549,7 +2294,7 @@
         {
           "breadcrumb": [
             "properties",
-            "mobile_image_url"
+            "CPM"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2559,7 +2304,7 @@
         {
           "breadcrumb": [
             "properties",
-            "web_image_url"
+            "Impressions"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2569,7 +2314,7 @@
         {
           "breadcrumb": [
             "properties",
-            "header_title"
+            "Direct ATC"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2579,7 +2324,7 @@
         {
           "breadcrumb": [
             "properties",
-            "creative_type"
+            "Indirect ATC"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2589,7 +2334,7 @@
         {
           "breadcrumb": [
             "properties",
-            "objective_type"
+            "Direct Quantities Sold"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2599,7 +2344,7 @@
         {
           "breadcrumb": [
             "properties",
-            "campaign_type_icon"
+            "Indirect Quantities Sold"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2609,7 +2354,7 @@
         {
           "breadcrumb": [
             "properties",
-            "campaign_budget"
+            "Direct Sales"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2619,7 +2364,7 @@
         {
           "breadcrumb": [
             "properties",
-            "impressions_served"
+            "Indirect Sales"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2629,7 +2374,7 @@
         {
           "breadcrumb": [
             "properties",
-            "impressions_bought"
+            "New Users Acquired"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2639,7 +2384,7 @@
         {
           "breadcrumb": [
             "properties",
-            "alerts"
+            "Estimated Budget Consumed"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2649,7 +2394,7 @@
         {
           "breadcrumb": [
             "properties",
-            "products"
+            "Direct RoAS"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2659,7 +2404,146 @@
         {
           "breadcrumb": [
             "properties",
-            "pids"
+            "Total RoAS"
+          ],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true
+          }
+        }
+      ]
+    },
+    {
+      "tap_stream_id": "campaign_performance_product_recommendation",
+      "stream": "campaign_performance_product_recommendation",
+      "key_properties": [
+        "Campaign ID"
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "Campaign ID": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "Campaign Name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "Pacing Type": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "CPM": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "Impressions": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Direct ATC": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Indirect ATC": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Direct Quantities Sold": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Indirect Quantities Sold": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Direct Sales": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "Indirect Sales": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "New Users Acquired": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "Estimated Budget Consumed": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "Direct RoAS": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "Total RoAS": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        }
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "inclusion": "available",
+            "selected": true,
+            "replication-method": "FULL_TABLE"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Campaign ID"
+          ],
+          "metadata": {
+            "inclusion": "automatic",
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Date"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2669,7 +2553,7 @@
         {
           "breadcrumb": [
             "properties",
-            "brand_ids"
+            "Campaign Name"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2679,7 +2563,7 @@
         {
           "breadcrumb": [
             "properties",
-            "highlighted_pids"
+            "Pacing Type"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2689,7 +2573,7 @@
         {
           "breadcrumb": [
             "properties",
-            "region_type"
+            "CPM"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2699,7 +2583,7 @@
         {
           "breadcrumb": [
             "properties",
-            "region_ids"
+            "Impressions"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2709,7 +2593,7 @@
         {
           "breadcrumb": [
             "properties",
-            "cpm"
+            "Direct ATC"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2719,7 +2603,7 @@
         {
           "breadcrumb": [
             "properties",
-            "equally_divide_budget"
+            "Indirect ATC"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2729,7 +2613,7 @@
         {
           "breadcrumb": [
             "properties",
-            "run_till_budget_ends"
+            "Direct Quantities Sold"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2739,7 +2623,7 @@
         {
           "breadcrumb": [
             "properties",
-            "etl_billed_amount"
+            "Indirect Quantities Sold"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2749,7 +2633,7 @@
         {
           "breadcrumb": [
             "properties",
-            "pacing_type"
+            "Direct Sales"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2759,7 +2643,7 @@
         {
           "breadcrumb": [
             "properties",
-            "requested_by"
+            "Indirect Sales"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2769,7 +2653,7 @@
         {
           "breadcrumb": [
             "properties",
-            "campaign_status_color"
+            "New Users Acquired"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2779,7 +2663,7 @@
         {
           "breadcrumb": [
             "properties",
-            "collection_id"
+            "Estimated Budget Consumed"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2789,7 +2673,7 @@
         {
           "breadcrumb": [
             "properties",
-            "brand_id"
+            "Direct RoAS"
           ],
           "metadata": {
             "inclusion": "available",
@@ -2799,197 +2683,7 @@
         {
           "breadcrumb": [
             "properties",
-            "store_name"
-          ],
-          "metadata": {
-            "inclusion": "available",
-            "selected": true
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "etl_impressions"
-          ],
-          "metadata": {
-            "inclusion": "available",
-            "selected": true
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "etl_snapshot_ts"
-          ],
-          "metadata": {
-            "inclusion": "available",
-            "selected": true
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "ad_title"
-          ],
-          "metadata": {
-            "inclusion": "available",
-            "selected": true
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "ad_subtitle"
-          ],
-          "metadata": {
-            "inclusion": "available",
-            "selected": true
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "billed_amount"
-          ],
-          "metadata": {
-            "inclusion": "available",
-            "selected": true
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "campaign_atc"
-          ],
-          "metadata": {
-            "inclusion": "available",
-            "selected": true
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "brand_atc"
-          ],
-          "metadata": {
-            "inclusion": "available",
-            "selected": true
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "campaign_sales"
-          ],
-          "metadata": {
-            "inclusion": "available",
-            "selected": true
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "brand_sales"
-          ],
-          "metadata": {
-            "inclusion": "available",
-            "selected": true
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "negative_keywords"
-          ],
-          "metadata": {
-            "inclusion": "available",
-            "selected": true
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "keywords"
-          ],
-          "metadata": {
-            "inclusion": "available",
-            "selected": true
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "categories"
-          ],
-          "metadata": {
-            "inclusion": "available",
-            "selected": true
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "allowed_transitions"
-          ],
-          "metadata": {
-            "inclusion": "available",
-            "selected": true
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "brand_page_id"
-          ],
-          "metadata": {
-            "inclusion": "available",
-            "selected": true
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "collection_filters"
-          ],
-          "metadata": {
-            "inclusion": "available",
-            "selected": true
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "sort"
-          ],
-          "metadata": {
-            "inclusion": "available",
-            "selected": true
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "display_name"
-          ],
-          "metadata": {
-            "inclusion": "available",
-            "selected": true
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "brands_ids"
-          ],
-          "metadata": {
-            "inclusion": "available",
-            "selected": true
-          }
-        },
-        {
-          "breadcrumb": [
-            "properties",
-            "category_ids"
+            "Total RoAS"
           ],
           "metadata": {
             "inclusion": "available",

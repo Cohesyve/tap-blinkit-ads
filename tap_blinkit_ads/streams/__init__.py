@@ -1,7 +1,7 @@
 
 from tap_blinkit_ads.streams.campaigns import CampaignsStream
 from tap_blinkit_ads.streams.campaign_details import CampaignDetailsStream
-from tap_blinkit_ads.streams.campaign_performance import CampaignPerformanceStream
+from tap_blinkit_ads.streams.campaign_performance import CampaignPerformanceProductListingStream, CampaignPerformanceProductRecommendationStream
 from tap_blinkit_ads.streams.advertisers import AdvertisersStream
 from tap_blinkit_ads.streams.products import ProductsStream
 from tap_blinkit_ads.streams.sponsored_sov import SponsoredSOVStream
@@ -14,7 +14,8 @@ AVAILABLE_STREAMS = [
     ProductsStream,
     SponsoredSOVStream,
     CampaignKeywordPerformanceStream,
-    CampaignPerformanceStream
+    CampaignPerformanceProductListingStream,
+    CampaignPerformanceProductRecommendationStream
 ]
 
 __all__ = [
@@ -24,5 +25,6 @@ __all__ = [
     'ProductsStream',
     'SponsoredSOVStream',
     'CampaignKeywordPerformanceStream',
-    'CampaignPerformanceStream'
+    'CampaignPerformanceProductListingStream',
+    'CampaignPerformanceProductRecommendationStream'
 ]
