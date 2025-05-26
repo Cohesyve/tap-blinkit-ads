@@ -1,0 +1,54 @@
+{
+    "type": "object",
+    "properties": {
+        "Campaign ID": {
+            "type": ["string", "null"]
+        },
+        "Date": {
+            "type": ["string", "null"],
+            "format": "date"
+        },
+        "Campaign Name": {
+            "type": ["string", "null"]
+        },
+        "Pacing Type": {
+            "type": ["string", "null"]
+        },
+        "CPM": {
+            "type": ["number", "null"]
+        },
+        "Impressions": {
+            "type": ["integer", "null"]
+        },
+        "Direct ATC": {
+            "type": ["integer", "null"]
+        },
+        "Indirect ATC": {
+            "type": ["integer", "null"]
+        },
+        "Direct Quantities Sold": {
+            "type": ["integer", "null"]
+        },
+        "Indirect Quantities Sold": {
+            "type": ["integer", "null"]
+        },
+        "Direct Sales": {
+            "type": ["number", "null"]
+        },
+        "Indirect Sales": {
+            "type": ["number", "null"]
+        },
+        "New Users Acquired": {
+            "type": ["integer", "null"]
+        },
+        "Estimated Budget Consumed": {
+            "type": ["number", "null"]
+        },
+        "Direct RoAS": {
+            "type": ["number", "null"]
+        },
+        "Total RoAS": {
+            "type": ["number", "null"]
+        }
+    }
+}
