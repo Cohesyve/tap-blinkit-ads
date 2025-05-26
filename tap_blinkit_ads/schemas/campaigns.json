@@ -38,7 +38,18 @@
             "type": ["integer", "null"]
         },
         "alerts": {
-            "type": ["null", "object"]
+            "type": ["array", "null"],
+            "items": {
+                "type": "object",
+                "properties": {
+                    "alert_type": {
+                        "type": ["string", "null"]
+                    },
+                    "alert_message": {
+                        "type": ["string", "null"]
+                    }
+                }
+            }
         },
         "updated_ts": {
             "type": ["string", "null"]

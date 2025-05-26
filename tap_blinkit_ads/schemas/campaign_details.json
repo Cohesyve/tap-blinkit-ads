@@ -53,7 +53,17 @@
         },
         "alerts": {
             "type": ["array", "null"],
-            "items": {}
+            "items": {
+                "type": "object",
+                "properties": {
+                    "alert_type": {
+                        "type": ["string", "null"]
+                    },
+                    "alert_message": {
+                        "type": ["string", "null"]
+                    }
+                }
+            }
         },
         "products": {
             "type": ["array", "null"],

@@ -83,9 +83,26 @@
                     },
                     "alerts": {
                         "type": [
-                            "null",
-                            "object"
-                        ]
+                            "array",
+                            "null"
+                        ],
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "alert_type": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "alert_message": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
                     },
                     "updated_ts": {
                         "type": [
@@ -357,7 +374,23 @@
                             "array",
                             "null"
                         ],
-                        "items": {}
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "alert_type": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "alert_message": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            }
+                        }
                     },
                     "products": {
                         "type": [
@@ -1963,7 +1996,8 @@
             "tap_stream_id": "campaign_performance_product_listing",
             "stream": "campaign_performance_product_listing",
             "key_properties": [
-                "Campaign ID"
+                "Campaign ID",
+                "Date"
             ],
             "schema": {
                 "type": "object",
@@ -2113,7 +2147,7 @@
                         "Date"
                     ],
                     "metadata": {
-                        "inclusion": "available"
+                        "inclusion": "automatic"
                     }
                 },
                 {
@@ -2284,7 +2318,8 @@
             "tap_stream_id": "campaign_performance_product_recommendation",
             "stream": "campaign_performance_product_recommendation",
             "key_properties": [
-                "Campaign ID"
+                "Campaign ID",
+                "Date"
             ],
             "schema": {
                 "type": "object",
@@ -2410,7 +2445,7 @@
                         "Date"
                     ],
                     "metadata": {
-                        "inclusion": "available"
+                        "inclusion": "automatic"
                     }
                 },
                 {
